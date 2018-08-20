@@ -13,4 +13,19 @@ public class MainMenuController : ExMono {
     {
         ExitGame();
     }
+
+    public void LoadCredits()
+    {
+        SceneLoader.LoadLevel(this, 3);
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneLoader.LoadLevel(this, 0);
+    }
+
+    public void OpenRepo()
+    {
+        Application.OpenURL("https://github.com/Akryllax/ECJam");
+    }
 }

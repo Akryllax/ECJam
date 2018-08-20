@@ -19,6 +19,9 @@ public class DecisionBox : ExMono {
 	
     private void OnCollisionEnter(Collision collision)
     {
-        decisionEntity.TriggerDecision(decisionType == DecisionType.YES);
+        if(collision.collider  && collision.collider.tag == "Player")
+        {
+            decisionEntity.TriggerDecision(decisionType == DecisionType.YES);
+        }
     }
 }

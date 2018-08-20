@@ -25,7 +25,7 @@ public class SceneLoader : ExMono
 
     IEnumerator LoadNewScene()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(0.5f);
 
         AsyncOperation async = SceneManager.LoadSceneAsync(sceneIndex);
 
